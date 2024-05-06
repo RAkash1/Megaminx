@@ -20,7 +20,7 @@ const Login=(props)=>{
 }, [props.token])
 
   const api = axios.create({
-    baseURL: "https://megaminx-be.vercel.app/"
+    baseURL: "https://megaminx-be.vercel.app"
 })
 
     const [userData, setUserData] = useState({
