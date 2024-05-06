@@ -1,0 +1,154 @@
+.App {
+  /* background-color: #23272F; */
+  /* background: linear-gradient(45deg, rgba(16,11,108,1) 0%, rgba(22,55,130,1) 17%, rgba(31,123,186,1) 37%, rgba(4,50,106,1) 56%, rgba(13,93,93,1) 80%, rgba(17,20,112,1) 99%, rgba(37,156,180,1) 100%); */
+  /* animation: flow infinite 20s ease-in-out; */
+  text-align: center;
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+  overflow-y: scroll;
+  color: white;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s ease-in-out;
+  }
+}
+
+.App-header {
+  background-color: #2a2e36;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.search_page{
+  color: white;
+  padding-top: 15vh;
+  padding-bottom: 2rem;
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.search{
+  padding-bottom: 3vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input{
+  width: 30vw;
+  font-size: 2rem;
+  font-family: Montserrat;
+  color: white;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+}
+
+.showMid{
+  display: none;
+}
+.showSmall{
+  display: none;
+}
+.showLarge{
+  display: block;
+}
+
+.Loading{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+#scroll{
+  max-height: 100vh;   
+  overflow-y: scroll;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flow{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+  .showMid{
+    display: block;
+  }
+  .showLarge{
+    display: none;
+  }
+  .search{
+    width: 70%;
+  }
+  .search input{
+    width: 60%;
+    font-size:23px;
+  }
+}
+
+
+@media screen and (max-width:500px){
+
+  .showSmall{
+    display: block;
+  }
+  .showMid{
+    display: none;
+  }
+
+  .hideMobile{
+    display: none;
+  }
+  .search{
+    width: 100%;
+    padding: 0;
+  }
+  .search input{
+    width: 70%;
+    font-size: 20px;
+  }
+}

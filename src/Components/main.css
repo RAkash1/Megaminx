@@ -1,0 +1,391 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Kanit&family=Inconsolata&display=swap');
+
+h1 {
+    font-family:kanit;
+    font-weight: normal;
+}
+
+.head-pic img{
+    object-fit:cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+.head-pic{
+    height: 80vh;
+    background-color:rgba(0, 0, 0, 0.71);
+    padding-bottom: 3rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.mid{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+.mid-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -27vh;
+    /* margin-left: 10vw; */
+    width: 50%;
+}
+.mid-left img{
+    width: 250px;
+    border: white solid 5px;
+}
+
+.posterOp{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posterOp img{
+    width: 250px;
+    border: white solid 5px;
+}
+
+.mid-right{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.mid-top-ul{
+    display: flex;  
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    /* padding: 10px 0;  */
+    padding-left: 35%;
+    width: 100%;  
+    justify-content:flex-start;
+    gap: 30px;
+    box-shadow: 36px -64px 128px -27px rgba(0, 0, 0, 0.744);
+}
+
+.mid-top-ul li span{
+    /* font-size: 1.1rem; */
+    width: 100%;
+    font-family: Montserrat;
+}
+div li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.mid-bot-ul{ 
+    background-color: rgba(0, 0, 0, 0.397);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px; 
+    line-height: 29px;
+    letter-spacing: 1.2px;
+    border-radius: 20px;
+}
+
+.mobile{
+    display: none;
+}
+
+.mid-bot-ul li span{
+    font-family: Poppins;
+
+}
+
+.bold{
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+.dull{
+    font-size: 1rem;
+    color: rgba(240, 248, 255, 0.79);
+
+}
+
+.display{
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    font-family: Poppins;
+
+}
+.display button{
+    display: block;
+    width: 15vw;
+    min-width: 200px;
+    margin: 10px;
+    height: 50px;
+    background-color: rgb(247, 247, 247);
+}
+#hist{
+    background-color: rgb(239, 62, 62);
+}
+#hist:hover{
+    color: red;
+    background-color: white;
+}
+#coll{
+    background-color: rgb(218, 31, 218);
+}
+#coll:hover{
+    color: purple;
+    background-color: white;
+}
+#watc{
+    background-color: rgb(86, 165, 187);
+}
+#watc:hover{
+    color:rgb(4, 4, 252) ;
+    background-color: white;
+}
+#comm{
+    background-color: grey;
+}
+#comm:hover{
+    color: grey;
+    background-color: white;
+}
+
+.overlay-data{
+    position:absolute;
+    width: 100%;
+    bottom:0;
+}
+
+.overlay-data h1{
+    color: white;
+    text-shadow: -4px 3px 10px #000000;
+    text-align:start ;
+    padding-left: 35%;
+    margin: 0;
+    backdrop-filter: blur(8px);
+}
+
+
+.options button{
+    font-family: Poppins;
+    font-weight: 800;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+}
+
+
+.tagline{
+    font-weight:700;
+    font-size:1.2rem;
+    padding-top:1rem;
+    width:250px;
+    color:white;
+    font-style: oblique;
+}
+
+.provider{
+    /* background-color: aqua; */
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.provider img{
+    border: none;
+    width: 3rem;
+}
+
+.other_info h1{
+    font-size: 35px;
+}
+
+.data-overview div{
+    font-family: Montserrat;
+    line-height: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.vid{
+    height: auto;
+    width: 100%;
+}
+
+#vidsrc{
+    width: 65vw;
+    height: 37vw;
+}
+
+@media screen and (max-width:1100px) {
+    .display{
+        width: auto;
+        justify-content: center;
+        padding:0 3rem ;
+    }
+    .mid-left >img{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .head-pic{
+        height: 60vh;
+    }
+    .mid-left{
+        display: none;
+    }
+
+    .posterOp{
+        display: flex;
+    }
+
+    .posterOp img{
+        width: 180px;
+    }
+
+    .overlay-data h1{
+        text-align: center;
+        padding-left:0;
+    }
+
+    .mid-top-ul{
+        padding: 0;
+        /* padding:0 5vw; */
+        width: auto;
+        padding:0 5rem;
+        justify-content: space-evenly;
+    }
+    .display{
+        flex-direction: column-reverse;
+    }
+    .options{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .options button{
+        width: 15rem;
+    }
+    .operation{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .tagline{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    #vidsrc{
+        width: 90vw;
+        height: 51vw;
+    }
+
+    .head-pic{
+        height: 60vh;
+    }
+
+    .mid-bot-ul li span{
+        font-size: 15px;
+    }
+
+    .overlay-data{
+        font-size: 10px;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        font-family:monospace;
+    }
+    .overlay-data h1{
+        font-size: 20px;
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        backdrop-filter: blur(10px);
+
+        margin: 0;
+        padding: 14px 0;
+        text-align: center;
+    }
+    .mid-top-ul{
+        gap: 0;
+        font-size: 3vw;
+        width: 100%;
+        padding: 0;
+    }
+    .mid-top-ul li span{
+        margin: 0;
+        font-size: 14px;
+    }
+    .posterOp{
+        display: none;
+    }
+    .display{
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem;
+    }
+    .options{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .other_info h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .desktop{
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .head-pic{
+        height: 100%;
+        position: relative;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+       
+    }
+    .overlay-data h1{
+        display: none;
+    }
+    .head-pic img{
+        object-fit:cover;
+        width: 100%;
+    }
+
+    .other_info h1{
+        font-size: 24px;
+    }
+
+}
+
