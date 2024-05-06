@@ -15,7 +15,7 @@ const SignUp=(props)=>{
   }
 }, [props.token])
   const api = axios.create({
-    baseURL: "http://localhost:5000/",
+    baseURL: "https://megaminx-be.vercel.app/",
     Headers: {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
