@@ -117,7 +117,6 @@ const DetailPage = (props) => {
         setRecommendations();
         setSimilar();
         setProvider();
-
         getDetails();
     }, [props.type, id])
 

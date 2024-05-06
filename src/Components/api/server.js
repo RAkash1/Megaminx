@@ -16,7 +16,7 @@ function CheckToken() {
         return false;
     }
     api = axios.create({
-        baseURL: "http://localhost:5000/",
+        baseURL: "https://megaminx-be.vercel.app/",
         headers: {
             "authorization": `Bearer ${token}`,
             "Content-Type": "application/json",
@@ -30,7 +30,7 @@ function CheckToken() {
 
 
 let api = axios.create({
-    baseURL: "http://localhost:5000/",
+    baseURL: "https://megaminx-be.vercel.app/",
     headers: {
         "authorization": `Bearer ${token}`,
         "Content-Type": "application/json",
